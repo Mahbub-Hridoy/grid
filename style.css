@@ -1,0 +1,87 @@
+body{
+    background-color: rgb(58, 51, 41);
+    margin: 10px;
+    height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.container > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+    color: azure;
+    text-transform: uppercase;
+}
+/* first try grid
+.header{
+    background-color: cadetblue;
+}
+.menu{
+    background-color: darkgoldenrod;
+}
+.content{
+    background-color: darkgray;
+}
+.box1{
+    background-color: darkkhaki;
+
+}
+.box2{
+    background-color: darkseagreen;
+}
+.footer{
+    background-color: darkslategrey;
+}
+*/
+
+/*first try grid
+.container{
+    display: grid;
+    grid-template-columns: repeat(3 , 1fr);
+    grid-template-rows: repeat(3 , 1fr);
+    grid-gap: 5px;  
+}
+*/
+
+
+/* new layout design
+.container{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 50px auto 50px;
+    height: 100%;
+    grid-template-areas: 
+        "m m h h h h h h h h h h"
+        "m m c c c c c c c c c c"
+        "f f f f f f f f f f f f"
+    ;
+}
+.header{
+    background-color: cadetblue;
+    grid-area: h;
+    
+     
+}
+.menu{
+    background-color: darkgoldenrod;
+    grid-area: m;
+    
+}
+.content{
+    background-color: darkgray;
+    grid-area: c;
+
+    
+}
+.footer{
+    background-color: darkslategrey;
+    grid-area: f; 
+}
+ end new layout design*/
+
+ .container{
+     height: 100%;
+     display: grid;
+     grid-template-columns: repeat(5 , 1fr);
+     grid-template-rows: repeat(2 , 1fr);
+ }
