@@ -76,12 +76,15 @@ body{
 .footer{
     background-color: darkslategrey;
     grid-area: f; 
-}
+}  
  end new layout design*/
 
- .container{
+ /*. new grid system layout design start
+ container{
      height: 100%;
      display: grid;
-     grid-template-columns: repeat(5 , 1fr);
-     grid-template-rows: repeat(2 , 1fr);
- }
+     grid-template-columns: repeat(5 , 90px);
+     grid-template-rows: repeat(2 , 90px);
+     grid-gap: 3px;  
+     close layout design
+     */
